@@ -16,7 +16,7 @@ if (playerHouse === 'Stark') {
 };
 
 if (playerHouse === "Stark" && honorOrFamily === "honor") {
-  var suicideOrHonor = prompt("It is evening. House Bolton's forces have massed on the other side of the Blackwater. You could meet them tomorrow in 'honorable battle' or you could send men on a 'suicide mission' during the night to kill as many Bolton men as possible.");
+  var suicideOrHonor = prompt("It is evening. House Bolton's forces and the Lannisters have massed on the other side of the Blackwater for the final showdown. You could meet them tomorrow in 'honorable battle' or you could send men on a 'suicide mission' during the night to kill as many Bolton and Lannister men as possible.");
 } else if (playerHouse === "Stark" && honorOrFamily === "family") {
   var firstFamily = prompt("Family is a noble thing to fight for. Please enter the name of your first family member.");
   var secondFamily = prompt("Please enter the name of your second family member.")
@@ -69,17 +69,20 @@ function killFamily() {
 }
 }
 
-// if (playerHouse === "Stark" && honorOrFamily === "family") {
-//   var numberOfFamily = [" Ned", " Rob", " Whiskers the Cat"];
-//   while (numberOfFamily.length !== 0) {
-//     var saveFirst = prompt("Who do you save first? ('Rob', 'Ned', or 'Whiskers')");
-//       if (saveFirst === 'Rob') {
-//         alert("Rob dies.");
-//         array.splice(1,1);
-//       }
-//   }
-// }
+if (playerHouse === "Stark" && honorOrFamily === "honor" && suicideOrHonor === 'honorable battle') {
+  alert("On the morrow, your forces prepare to meet in honorable battle. You lead the charge, screaming your battle cry, sure in your chances of victory. However, the devious Boltons dug a massive hole during the night and covered it with leaves, which you totally failed to notice because you were too busy sharpening your sword. Which, by the way, falls into the hole with you, impales your crotch and kills you. Whoops! THE END." );
+} else if (playerHouse === "Stark" && honorOrFamily === "honor" && suicideOrHonor === 'suicide mission') {
+  var menSent = prompt("You have 2000 soldiers at your disposal. How can you do you send?");
+    if (menSent < 2000) {
+      alert("You send as many soldiers as can be spared during the night. However, it doesn't prove to be enough. The next day, your forces are surrounded and the Lannisters capture you, attach you to a catapult, and fire you into a ravine. You die. THE END.");
+    } else if (menSent >= 2000) {
+      alert("You sent all of your guys? All of them? That's...intense. Jeez.");
+      alert("Your entire force creeps into their camp at night, while you hang back and get some Zzz's. They do bloody work, and reduce the enemy force. All of them are killed, but Bolton's end up turning on the Lannisters in the morning, and the two sides cut each other to pieces. Only you are left, your path clear to the Iron Throne.");
+      alert("Not so honorable now, are we? THE END");
+    } else if (menSent)
+}
 
-// for (i=0; i<=starkFamily.length;i++) {
-//   if ()
-// }
+if (playerHouse === "Targaryen" && madOrNotMad === "mad") {
+  var playerName = prompt("Before you can rule, you need a ruler's name. All Targaryen rulers had a cool name. King Valarian the Renowned. King Redmont the Berserker. Queen Darys the Flatulent. What is your name?")
+  prompt
+}
