@@ -108,8 +108,30 @@ if (dragonEgg === "black" && unleashOrNay === "keep her back") {
   alert("Now is the moment you've been waiting for. Time to let the beast off the chain. You unlock the dragons chains and simply point at the other end of the battlefield. She takes flight.");
     i = 1;
     while (i <= 3) {
-      alert("In the" + i + "st" + " pass, your dragon takes care of" + Math.floor() + " wights.");
+      alert("In the" + i + "st" + " pass, your dragon takes care of" + Math.random() + " wights.");
       i++;
     };
     alert("The path to the throne is clear, mostly because everyone else is dead. You fly off on your dragon, deciding to take a little vacation. You hear Dorne is nice this time of year. THE END");
 };
+if (whatToGrow === "iron") {
+  alert("The Hogg region, normally known for its delicious produce, decides to switch to the production of iron for the war effort. Your people don't know much about smelting and whatnot, but you forge ahead none the less (pun intended).");
+  var waitOrNot = prompt("The Lannisters send in an order for 5,000 swords and 4,000 shields. Do you 'get started' or wait 'to learn' more about how to make quality ironworks?");
+} else if (whatToGrow === "honey") {
+  alert("Despite the news of war, you decide to keep producing the delicious honey your region is known for. This year looks to be a banner year for your hives, so you become a busy bee working to harvest as much as possible before war overtakes you.");
+  var defendOrNot = prompt("Eventually, inevitably, your little region is targeted by a raid from the evil Greyjoy's. Do you 'defend' your beehives or try to 'draw back' to the keep?");
+}
+
+if (waitOrNot === "get started") {
+  alert("You know the Lannisters are impatient for more weapons, so you get started right away. Iron works soon proves very different from growing zuchini's, and most of the swords come out as molten lumps or in the shape of common vegetables.");
+  alert("The Lannisters come visitng one day, and decide to make an example of you for your poor craftsmanship. They burn your farmland, and lock you in a wine cellar. At least you can get very drunk before you die. THE END.");
+} else if (waitOrNot === "to learn") {
+  alert("You decide to wait, and learn more about iron work before getting started. A band of Stark raiders come calling one evening. You wish you could defend your people, but all you have are seeds and garden hoes. The Starks execute you as a traitor, and take your giant zuchinni. THE END");
+}
+
+if (defendOrNot === "defend") {
+  alert("NO ONE GETS TO TAKE YOUR HONEY! You arm your citizens with simple garden implements, and fight the invaders off with an astonishing level of fury. Your citizens, thrilled at the victory, are invigorated and focus themselves on making the best honey ever seen in Westeros.");
+  alert("The honey that you create is incredible, and fetches a huge price in a war torn nation. You use the money to reinvest in agrilculture, growing all sorts of delectable vegetables and produce. Refugees from across the land flock to your banner, and eventually the Hogg name is respected from coast to coast.");
+  alert("When the offer comes, you are surprised, and nervous, but hopeful. The leaders of the Seven Kingdoms have had enough of war, and would like a sweeter and less violent future - so they have asked the Hogg's to take the Iron Throne. Your rule is long and peaceful, and eventually the Iron Throne gets a new name: The Honey Throne. THE END");
+} else if (defendOrNot === "draw back") {
+  alert("You leave your honey for the invaders. Watching from the battlements, you see the Greyjoy's eating your honey and burning the hives. The sight is too much for your poor heart to take. You keel over, gasping curses with yor final breath. THE END");
+}
