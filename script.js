@@ -7,12 +7,16 @@ if (playerHouse === 'Stark') {
 } else if (playerHouse === 'Targaryen') {
   alert("The Targaryen house has a, let's call it, a tendency towards madness. Apparently, a bunch of Targaryen rulers have gone crazy and burned/maimed/stabbed/eaten/tickled their subjects to death. But that's cool! Whatever. No judgement.")
   var madOrNotMad = prompt("Do you go 'mad' or are you 'not mad'?");
+  var targName = prompt("And what is your name?")
 } else if (playerHouse === 'Hogg') {
   alert("House Hogg. A small hamstead in the north of the Riverlands. Proudest house moment: in 1041 House Hogg grew the largest zuchini in the history of Westeros. It was huge. King Valarian himself described it as 'really quite impressive.'");
   var whatToGrow = prompt("Do you cultivate 'honey' or do you switch production to 'iron'?");
 } else if (playerHouse === 'Lannister') {
-  alert("You picked the Lannisters? That's not even an option. I guess we can do that.")
-  var debtOrNo = prompt("Do you pay your debts? Y/N");
+  alert("You picked the Lannisters? That's not even an option. Go play Candy Crush. The Lannisters. Hah.");
+};
+
+if (madOrNotMad === "mad") {
+  targName = "Mad " + targName;
 };
 
 if (playerHouse === "Stark" && honorOrFamily === "honor") {
@@ -79,10 +83,33 @@ if (playerHouse === "Stark" && honorOrFamily === "honor" && suicideOrHonor === '
       alert("You sent all of your guys? All of them? That's...intense. Jeez.");
       alert("Your entire force creeps into their camp at night, while you hang back and get some Zzz's. They do bloody work, and reduce the enemy force. All of them are killed, but Bolton's end up turning on the Lannisters in the morning, and the two sides cut each other to pieces. Only you are left, your path clear to the Iron Throne.");
       alert("Not so honorable now, are we? THE END");
-    } else if (menSent)
+    }
+};
+
+
+if (playerHouse === "Targaryen") {
+  alert("All hail " + targName + ", King of the Andals, the Rhoyne, and the Firstman, Harrower of Men and Destroyer of Chains, Born of Dragon Blood. All hail.");
+  var dragonEgg = prompt("A mysterious visitor enters your court and brings you a dragon egg. There is a 'blue', a 'green', and a 'black' - but you can only take one. Which do you take? ");
 }
 
-if (playerHouse === "Targaryen" && madOrNotMad === "mad") {
-  var playerName = prompt("Before you can rule, you need a ruler's name. All Targaryen rulers had a cool name. King Valarian the Renowned. King Redmont the Berserker. Queen Darys the Flatulent. What is your name?")
-  prompt
-}
+if (dragonEgg === "green") {
+  alert("The green dragon egg turns out to be a giant ostrich egg. While you can't use it for battle or conquest, you can make a tasty omelette from it.");
+  alert("You make a big breakfast the next morning - ostrich egg, bacon, the works. Your maester told you to watch your cholestrol but you take no heed. On the evenings ride, you keel over with heart pains, and the Dothraki leave you on the side of the road to get eaten by scorpions. You die. THE END");
+} else if (dragonEgg ==="blue") {
+  alert("While carrying the blue dragon egg back to your chambers, you notice something strange. The egg is actually made of elaborate paper mache. Someone spent a lot of time designing this thing, but it carries no practical or martial value.");
+  alert("You're so angry, you set the thing on fire on the roof of your castle to make an example. An ember from the fire catches on the hay below, and the castle burns down around you while you sleep. You die. THE END")
+} else if (dragonEgg === "black") {
+  var unleashOrNay = prompt("The black egg pulsates in your hands as you take it. Years pass, and you raise the dragon that hatches from it as your own. Eventually, destiny leads you to a final battle at against the Others. Do you 'unleash' your dragon or 'keep her back'?");
+};
+
+if (dragonEgg === "black" && unleashOrNay === "keep her back") {
+  alert("You decide to keep your dragon back from the battle. During the fighting, she breaks free, and scorches the entire battlefield. You confront her, and tell her: 'BAD DRAGON! BAD!' She looks at you, and snaps you up in her jaws. Dragons are not pets. Lesson learned. THE END." )
+} else if (dragonEgg === "black" && unleashOrNay === "unleash") {
+  alert("Now is the moment you've been waiting for. Time to let the beast off the chain. You unlock the dragons chains and simply point at the other end of the battlefield. She takes flight.");
+    i = 1;
+    while (i <= 3) {
+      alert("In the" + i + "st" + " pass, your dragon takes care of" + Math.floor() + " wights.");
+      i++;
+    };
+    alert("The path to the throne is clear, mostly because everyone else is dead. You fly off on your dragon, deciding to take a little vacation. You hear Dorne is nice this time of year. THE END");
+};
