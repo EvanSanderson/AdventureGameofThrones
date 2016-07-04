@@ -108,7 +108,7 @@ if (dragonEgg === "black" && unleashOrNay === "keep her back") {
   alert("Now is the moment you've been waiting for. Time to let the beast off the chain. You unlock the dragons chains and simply point at the other end of the battlefield. She takes flight.");
     i = 1;
     while (i <= 3) {
-      alert("In the" + i + "st" + " pass, your dragon takes care of" + Math.random() + " wights.");
+      alert("In the " + i + "st" + " pass, your dragon takes care of " + Math.floor((Math.random() * 500)) + " wights.");
       i++;
     };
     alert("The path to the throne is clear, mostly because everyone else is dead. You fly off on your dragon, deciding to take a little vacation. You hear Dorne is nice this time of year. THE END");
